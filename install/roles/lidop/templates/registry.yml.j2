@@ -9,6 +9,7 @@ services:
         mode: host
     volumes:
       - "/var/lidop/certs/:/certs"
+      - "/var/lidop/docker-registry/data:/opt/data"
     environment:
       REGISTRY_HTTP_TLS_CERTIFICATE: /certs/registry.pem
       REGISTRY_HTTP_TLS_KEY: /certs/registry.key
